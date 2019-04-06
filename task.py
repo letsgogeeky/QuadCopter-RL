@@ -28,7 +28,7 @@ class Task():
 
     def get_reward(self):
         """Uses current pose of sim to return reward."""
-        total_effort_up = (self.target_pos[3] - self.sim.pose[3])
+        total_effort_up = (self.target_pos[2] - self.sim.pose[2])
         reward = 0
         if total_effort_up >= 0:
             reward = 1
